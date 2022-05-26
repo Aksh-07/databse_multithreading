@@ -4,6 +4,7 @@ import sqlite3
 import concurrent.futures
 
 s = time.time()
+
 data_list1 = []
 data_list2 = []
 data_list3 = []
@@ -31,7 +32,7 @@ def delete_table():
     con.close()
 
 
-def task(list_, lock_):
+def insert(list_, lock_):
     con = sqlite3.connect("practice.db")
     lock_.acquire()
     c = con.cursor()
@@ -86,7 +87,7 @@ convert_data(data_)
 all_data_list = [data_list1, data_list2, data_list3, data_list4]
 
 with concurrent.futures.ThreadPoolExecutor() as executor:
-    futures = [executor.submit(task, data, lock) for data in all_data_list]
+    futures = [executor.submit(insert, data, lock) for data in all_data_list]
 
 
 f = time.time()
