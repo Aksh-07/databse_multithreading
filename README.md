@@ -21,11 +21,11 @@
 ### Database name:  practice.db
 Contains 1 table with 4 columns:
                                          
-                                        my_table   
+                                          my_table   
 
-                    column1    |   column2  |  column3    |   column4
+                      column1  |   column2  |  column3    |   column4
                     -----------|------------|-------------|------------
-                    Integer    |    Integer |  Integer    |    String(_contains list_)
+                      Integer  |   Integer  |  Integer    |  String(contain list)
 
 ________________________________________________________________________________________________________________________
 
