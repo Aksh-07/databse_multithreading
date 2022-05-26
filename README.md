@@ -69,7 +69,7 @@ process to execute.
 TOTAL TIME TAKEN BY THE PROCESS TO EXECUTE: AROUND 0.2 SECONDS
 
 ### 2. single_insert.py
-    In this approach a extra library is used ---- queue.Queue
+    In this approach an extra library is used ---- queue.Queue
 We have a table _my_table_ in our database _practice.db_ structured in the same way as our raw data.
 In this approach we are inserting single row of item from our data using execute in our insert function and there are 
 4 threads running concurrently to insert data into our table.
